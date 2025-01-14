@@ -49,7 +49,7 @@ int main(){
         scanf("%d",&ans3);
         if(ans3==4){
             printf("Correct Answer\n");
-            rups += 500;
+            rups += 100;
             printf("You have earned rupees %d\n", rups);
         }
          else{
