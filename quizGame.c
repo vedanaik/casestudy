@@ -2,7 +2,7 @@
 int main(){
     char choice, S, Q;
     int rups;
-    int ans1,ans2,ans3,ans4,ans5;
+    int ans;
     
     printf("Welcome to KBC\n");
     printf("!!Press S to start the game!!\n");
@@ -15,8 +15,8 @@ int main(){
         printf("3. Paris\n");
         printf("4. Rome\n");
         printf("Enter Your Answer : ");
-        scanf("%d",&ans1);
-        if(ans1==3){
+        scanf("%d",&ans);
+        if(ans==3){
             printf("Correct Answer\n");
             rups = 100;
             printf("You have earned rupees %d\n", rups);
@@ -30,8 +30,8 @@ int main(){
         printf("3. Nepal\n");
         printf("4. China\n");
         printf("Enter Your Answer : ");
-        scanf("%d",&ans2);
-        if(ans2==2){
+        scanf("%d",&ans);
+        if(ans==2){
             printf("Correct Answer\n");
             rups += 100;
             printf("You have earned rupees %d\n", rups);
@@ -46,8 +46,8 @@ int main(){
         printf("3. Chinese\n");
         printf("4. Japanese\n");
         printf("Enter Your Answer : ");
-        scanf("%d",&ans3);
-        if(ans3==4){
+        scanf("%d",&ans);
+        if(ans==4){
             printf("Correct Answer\n");
             rups += 100;
             printf("You have earned rupees %d\n", rups);
@@ -63,8 +63,8 @@ int main(){
         printf("3. Vancouver\n");
         printf("4. Florida\n");
         printf("Enter Your Answer : ");
-        scanf("%d",&ans2);
-        if(ans2==2){
+        scanf("%d",&ans);
+        if(ans==2){
             printf("Correct Answer\n");
             rups += 100;
             printf("You have earned rupees %d\n", rups);
