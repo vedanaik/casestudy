@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main(){
     char choice, S, Q;
-    int rups;
+    int rups = 0;
     int ans;
     
     printf("Welcome to KBC\n");
@@ -18,7 +18,7 @@ int main(){
         scanf("%d",&ans);
         if(ans==3){
             printf("Correct Answer\n");
-            rups = 100;
+            rups += 100;
             printf("You have earned rupees %d\n", rups);
         } else{
             printf("Wrong Answer\n");
