@@ -1,0 +1,852 @@
+// /*#include<stdio.h>
+// int main(){
+//     int x;
+//     printf("Enter number: ");
+//     scanf("%d",&x);
+//     if(x%5==0 || x%3==0){
+//         if(x%15!=0){
+//             printf("The number is divisible by 5 or 3 but not by 15!");
+//         }
+//     }
+//     else{
+//         printf("The number is not divisible by 5 or 3 and definately not by 15!!!");
+//     }
+//     return 0;
+// }*/
+
+// #include<stdio.h>
+// int main()
+// {
+//     int n,i;
+//     printf("Enter a no. divisible by 10:");
+//     scanf("%d",&n);
+//     for ( i = n; i >=0 ; i=n-10)
+//     {
+//         printf("%d\n",i);
+//     }
+//     return 0;
+// }
+
+
+// #include<stdio.h>
+// int main()
+// {
+//     int i,j;
+//     for(i=10;i>0;i--)
+//      {
+//     for(j=1;j<i;j++)
+//     printf("*");
+//     printf("\n");
+//     }
+//     return 0;
+// }
+
+// #include<stdio.h>
+// int main()
+// {
+//     int i,j;
+//     for(i=5;i>0;i--)
+//      {
+//     for(j=1;j<i;j++)
+//     printf("%d",j);
+//     printf("\n");
+//     }
+//     return 0;
+// }
+
+// #include<stdio.h>
+// int main()
+// {
+//     int i,j;
+//     for(i=1;i<5;i++)
+//      {
+//     for(j=4;j>=i && j>0 ;j--)
+//     printf("%d",j);
+//     printf("\n");
+//     }
+//     return 0;
+// }
+
+// #include<stdio.h>
+// int main()
+// {
+//     int i,j;
+//     for(i=4;i<8;i++)
+//      {
+//     for(j=4;j<=i;j++)
+//     printf("%d",j);
+//     printf("\n");
+//     }
+//     return 0;
+// }
+
+
+// #include<stdio.h>
+// int main ()
+// {
+//     int n, rev=0, r;
+//     printf("Enter no.:");
+//     scanf("%d",&n);
+//     while (n!=0)
+//     {
+//         r=n%10;
+//         n/=10;
+//         rev=10*rev+r;
+//     }
+//     printf("%d",rev);
+//     return 0;
+    
+// }
+
+// #include<stdio.h>
+// int main()
+// {
+//     int n, flag, i;
+//     printf("Enter number:");
+//     scanf("%d",&n);
+//     for(i=(n-1); i>0; i--)
+//     {
+//         for(i=1)
+//         flag=1;
+//         if (n%i=0)
+//         flag=1;
+//         else
+//         flag=0;
+//         for ( flag=1 )
+//         printf("%d",i);
+//     }
+//     return 0;       
+// } 
+
+
+// #include<stdio.h> //Prime number identification.
+// int main()
+// {
+//     int n,i,flag=0;
+//     printf("Enter number: ");
+//     scanf("%d",&n);
+//     if(n==1 || n==0)
+//     flag=1;
+//     for(i=2;i<=(n/2);i++)
+//     {
+//         if(n%i==0)
+//        { flag=1;
+//         break;}
+//     }
+//     if(flag=0)
+//     printf("The number is not prime.");
+//     else
+//     printf("The number is prime");
+
+//     return 0;
+// }
+
+// #include<stdio.h>
+// int main()
+// {
+//     int a,b,c;
+//     char x;
+//     printf("Input numbers:\n ");
+//     scanf("%d %d",&a,&b);
+//     printf("Input operator: ");
+//     scanf(" %c",&x);
+//     switch (x)
+//     {
+//     case '+':
+//         c=a+b;
+//         break;
+//     case '-':
+//         c=a-b;
+//         break;
+//     case '*':
+//         c=a*b;
+//         break;
+//     case '/':
+//         c=a/b;
+//         break;
+//     default: printf("Invalid input.");
+//         break;
+//     }
+//     printf("%d",c);
+//     return 0;
+// }
+
+
+// #include<stdio.h>
+// int main()
+// {
+//     char x;
+//     printf("Input Grade: ");
+//     scanf("%c",&x);
+//     switch (x)
+//     {
+//     case 'A':
+//         printf("45");
+//         break;
+//     case 'B':
+//         printf("40");
+//         break;
+//     case 'C':
+//         printf("35");
+//         break;
+//     case 'D':
+//         printf("30");
+//         break;    
+//         default: printf("Invalid Input.");
+//         break;
+//     }
+// return 0;
+// }
+
+// #include<stdio.h>
+// int main()
+// {
+//     int n, sum=0, f;
+//     printf("Enter Number: ");
+//     scanf("%d",&n);
+//     for (int i = 1; i <= (n/2); i++)
+//     {
+//         if(n%i==0)
+//         sum=sum+n;
+//     }
+//     switch (n)
+//     {
+//     case n%2==0:
+//         printf("Even number.");
+//         break;
+//     case n%2!=0:
+//         printf("Odd number.");
+//         break;
+//     case n==sum:
+//         printf("Perfect number");
+//         break;
+//     default:
+//         break;
+//     }
+// }
+// #include<stdio.h> //to print array with larger ascii value.
+// int main(){
+//   char c[5], d[5];
+// for (int i = 0; i < 5; i++)
+// {
+//   printf("Enter char at %d position for first array and second array:\n",i);
+//   scanf("\n%c\n%c",&c[i],&d[i]);
+// }
+// for(int j = 0; j < 5; j++){
+// if(c[j]>d[j]){
+// printf("Array 1 has greater value.");
+// break;
+// }
+// else if(c[j] < d[j]){
+// printf("Array 2 has greater value.");
+// break;
+// }
+// else
+// continue;
+// }
+// return 0; 
+// }
+
+// #include<stdio.h>
+// int main(){
+//   int a[10], i, min, t, j;
+//   for(i=0; i<10; i++)
+//   {
+//     printf("Enter a number at position %d: ",i);
+//     scanf("%d",&a[i]);
+//   }
+//   for(i=0; i<10; i++)
+//   {
+//     for(j=i+1; j<10; j++)
+//     {
+//     if(a[i]>a[j])
+//     t=a[i];
+//     a[i]=a[j];
+//     a[j]=t;
+//     }
+//   } 
+//   for (i = 0; i < 10; i++)
+//   {
+//     printf("%d\t",a[i]);
+//   }
+//   return 0;
+// }
+
+
+// #include<stdio.h>
+// int main()
+// {
+//   int a[5], i, j, t;
+//   for(i=0; i<5; i++)
+//   {
+//     printf("%d: ",i);
+//     scanf("%d",&a[i]);
+//   }
+//   for(i=0; i<5; i++)
+//   {
+//     printf("%d\t",a[i]);
+//   }
+//   printf("\n");
+// for(i=0; i<4; i++)
+// {
+//   for(j=1; j<5; j++)
+//   {
+//     if(a[i]>a[j])
+//     {
+//       t = a[i];
+//       a[j] = a[i];
+//       a[i] = t;
+//     }
+//   }
+//   for(i = 0; i<5; i++)
+//   {
+//     printf("%d\t",a[i]);
+//   }
+// }
+// return 0;
+// }
+
+// #include<stdio.h>
+// int main()
+// {
+//   char a[6];
+//   int i, p, n;
+//   for(i=0; i<5; i++)
+//   {
+//     printf("Enter charecter at position %d: ",i);
+//     scanf("%c",&a[i]);
+//   }
+//   printf("Enter position n no. of charecters to remove: ");
+//   scanf("%d %d",&p,&n);
+//   for(i=p; i<(p+n); i++)
+//   {
+//     printf("%c",a[i]);
+//   }
+//   return 0;
+// }
+
+
+// #include<stdio.h>
+// int main()
+// {
+//     char str[11], substr[11];
+//     int p, n, i, j;
+//     printf("Enter string: ");
+//     scanf("%s",&str);
+//     printf("Start posn n no. of char: ");
+//     scanf("%d %d",&p,&n);
+//     j=p-1;
+//     for(i=0; i<n; i++,j++)
+//     {
+//         substr[i]=str[j];
+//     }
+//     printf("The substring is: %s",substr);
+//     return 0;
+// }
+
+// #include<stdio.h>
+// int main()
+// {
+//     int a[4][3]={(1,8,9),(8,9,5),(79,65,45);}{(6,4,56),(87,230,5),(679,655,425);}{(100,85,96),(865,51,5657),(720,6355,495);}{(98,238,109),(5108,652109,3215),(762,985,4565);};
+//     int i,j;
+//     for(i=0; i<4; i++)
+//     {
+//         for(j=0; j<3; j++)
+//         {
+//             printf("%d",a[i][j]);
+//         }
+//     }
+// return 0;
+// }
+
+// #include<stdio.h>
+// int main()
+// {
+//     int i, j, p, n;
+//     char str[]="GoodMorning", substr[];
+//     printf("Enter position and number of char:\n");
+//     scanf("%d\n%d",&p,&n);
+//     j=n-1;
+//     for(i=0; i<n; i++, j++)
+//     {
+//         substr[i]=str[i+j];
+//     }
+//     printf("%s",substr);
+//     substr[n]='\0';
+//     return 0;
+// }
+
+// #include<stdio.h>
+// int main()
+// {
+//     int a,b,i,j,sum=0,n;
+//     printf("Enter smaller number first and second number later:\n");
+//     scanf("%d\n%d",&a,&b);
+//     for(i=(a+1); a<b; i++)
+//     {
+//         for(j=2; j<=(i/2); j++)
+//         {
+//         if(i%j==0)
+//         n=i/j;
+//         sum = sum + n;
+//         if(sum==i)
+//         printf("%d",i);
+//         }
+//     }
+//     return 0;
+// }
+
+
+// #include<stdio.h>
+// int main()
+// {
+//     int a, b, i, sum=0, n, c;
+//     printf("Enter a smaller and a bigger number:\n");
+//     scanf("%d\n%d",&a,&b);
+//     for(i=(a+1); i<b; i++)
+//     {
+//         for(n=2; n<=(i/2); n++)
+//         {
+//             if(i%n==0)
+//             {
+//                c=i/n;
+//                sum+=c;
+//             }
+//         }
+//     }
+//     if(sum==i)
+//             {
+//                 printf("%d id a perfect number.",i);
+//             }
+//             else{
+//                 printf("There is no perfect number between %d and %d",a,b);
+//             }
+//     return 0;
+// }
+
+// #include<stdio.h>
+// int main()
+// {
+//     int i, n1, n2, j, sum=0, x;
+//     printf("Enter smaller and a bigger number:\n");
+//     scanf("%d\n%d",&n1,&n2);
+//     for(x=(n1+1); x<n2; x++)
+//     {
+//     for(i=1; i<=(x/2); i++)
+//     {
+//         if (x%i==0)
+//             sum=sum+i;
+//         else
+//         continue;        
+//     }
+//         if(sum==x)
+//         printf("%d",x);
+//         else
+//         continue;
+//     }
+//     return 0;
+// }
+
+// #include <stdio.h>
+// int isPerfect(int num) {
+//     int sum = 0;
+//     for (int i = 1; i <= num / 2; i++) {
+//         if (num % i == 0) {
+//             sum += i;
+//         }
+//     }
+//     return sum == num;
+// }
+// int main() {
+//     int lower, upper;
+//     printf("Enter the lower limit: ");
+//     scanf("%d", &lower);
+//     printf("Enter the upper limit: ");
+//     scanf("%d", &upper);
+//     printf("Perfect numbers between %d and %d are:\n", lower, upper);
+//     for (int i = lower; i <= upper; i++) {
+//         if (isPerfect(i)) {
+//             printf("%d\n", i);
+//         }
+//     }
+//     return 0;
+// }
+
+// #include <stdio.h>
+// int gcd(int a, int b) {
+//     while (b != 0) {
+//         int temp = b;
+//         b = a % b;
+//         a = temp;
+//     }
+//     return a;
+// }
+// int lcm(int a, int b) {
+//     return (a * b) / gcd(a, b);
+// }
+
+// int main() {
+//     int choice, num1, num2;
+
+//     printf("Enter your choice (1 for GCD, 2 for LCM): ");
+//     scanf("%d", &choice);
+
+//     printf("Enter two numbers: ");
+//     scanf("%d %d", &num1, &num2);
+
+//     switch (choice) {
+//         case 1:
+//             printf("GCD of %d and %d is %d\n", num1, num2, gcd(num1, num2));
+//             break;
+//         case 2:
+//             printf("LCM of %d and %d is %d\n", num1, num2, lcm(num1, num2));
+//             break;
+//         default:
+//             printf("Invalid choice.\n");
+//     }
+
+//     return 0;
+// }
+// #include<stdio.h>
+// int main()
+// {
+//     int a[5], i, j, sum=0, n;
+//     printf("Enter number of elements in array: ");
+//     scanf("%d",&n);
+//     for(i=0; i<n; i++)
+//     {
+//         printf("Enter number for position %d: ",i);
+//         scanf("%d",&a[i]);
+//     }
+//     for(i=0; i<n; i++)
+//     {
+//         sum=sum+a[i];
+//     }
+//     printf("The sum of elements is: %d\n",sum);
+//     float avg=sum/n;
+//     printf("The average of numbers is: %f",avg);
+// }
+
+// #include<stdio.h>
+// int main()
+// {
+//     int a[10], i, j, min, n;
+//     printf("Enter number of elements in array: ");
+//     scanf("%d",&n);
+//     for(i=0; i<n; i++)
+//     {
+//         printf("Enter number for position %d: ",i);
+//         scanf("%d",&a[i]);
+//     }
+//     min=a[0];
+//     for ( i = 0; i < (n-1); i++)
+//     for( j = 1; j < n; j++)
+//     {
+//         if (a[i]>a[j])
+//         min=a[j];
+//         else
+//         continue;
+//     }
+//     printf("The minimum value is: %d",min);
+//     return 0;
+// }
+
+// #include<stdio.h>
+// int main()
+// {
+//     int a[10], i, j, n, x, flag=0;
+//     printf("Enter number of elements in array: ");
+//     scanf("%d",&n);
+//     for(i=0; i<n; i++)
+//     {
+//         printf("Enter number for position %d: ",i);
+//         scanf("%d",&a[i]);
+//     }
+//     printf("Enter element you want to find: ");
+//     scanf("%d",&x);
+//     for(i=0; i<n; i++)
+//     {
+//         if(x==a[i])
+//         {
+//             printf("The element %d is found at position %d.",x,i);
+//             flag++;
+//         }
+//         else
+//             continue;
+//         if(flag==0)
+//         printf("There is no such element in the array.");
+//     }
+//     return 0;
+// }
+
+
+// #include<stdio.h> 
+// int main() 
+// { 
+//    int n, i, flag, j, b, t; 
+//    printf("Enter the number of elements: "); 
+//     scanf("%d", &n);   
+//      int arr[n];  
+//     for (i = 0; i < n; i++) 
+//     {   
+//         printf("Enter element at position %d: ",i); 
+//         scanf("%d", &arr[i]);  
+//     } 
+//     while((i < n ) && (flag == 0)) 
+//     { 
+//         flag = 1; 
+//         i++; 
+//         for(int j = 0 ; j < n-1 ; j++) 
+//         { 
+//             if(arr[j] > arr[j + 1]) 
+//             { 
+//                 t = arr[j]; 
+//                 arr[j] = arr[j + 1]; 
+//                 arr[j + 1] = t; 
+//                 flag = 0; 
+//             } 
+//         } 
+//     } 
+//     for(b = 0 ; b < n ; b++) 
+//     { 
+//         printf("%d\n ",arr[b]); 
+//     } 
+// return 0; 
+// }
+
+// #include<stdio.h> 
+// int main()
+// { 
+//     int n; 
+//     printf("Enter length of an array:"); 
+//     scanf("%d",&n); 
+//     int arr[n]; 
+//     printf("Enter an array:\n"); 
+//     for(int i=0;i<n;i++) 
+//         scanf("%d",&arr[i]);  
+//     int min, t; 
+//     for(int i=0;i<n-1;i++)
+//     { 
+//     min=i; 
+//     for(int j=i+1;j<n;j++)
+//     { 
+//         if(arr[j]<arr[min])
+//         min=j; 
+//     } 
+//     t=arr[min]; 
+//     arr[min]=arr[i]; 
+//     arr[i]=t; 
+//     } 
+//     for(int i=0;i<n;i++)
+//         printf("%d ",arr[i]);
+//     return 0; 
+// }
+
+// #include<stdio.h> 
+// int main() 
+// { 
+//    int n; 
+//    printf("Enter the number of elements: "); 
+//     scanf("%d", &n);   
+//      int arr[n]; 
+//     printf("Enter %d elements:\n", n); 
+//     for (int i = 0; i < n; i++) { 
+//         scanf("%d", &arr[i]);  
+//     } 
+//      int i = 0,flag = 0; 
+//     while((i < n ) && (flag == 0)) 
+//     { 
+//         flag = 1; 
+//         i++; 
+//         for(int j = 0 ; j < n-1 ; j++) 
+//         { 
+//             if(arr[j] > arr[j + 1]) 
+//             { 
+//                 int t = arr[j]; 
+//                 arr[j] = arr[j + 1]; 
+//                 arr[j + 1] = t; 
+//                 flag = 0; 
+//             } 
+//         } 
+//     }
+//     printf("Sorted array is:\n");
+//     for(int b = 0 ; b < n ; b++) 
+//     { 
+//         printf("%d\t",arr[b]); 
+//     } 
+// return 0; 
+// }
+
+#include<stdio.h>
+#include<stdlib.h>
+#include<time.h>
+int main()
+{
+    srand(time(0));
+    int arr[5], ans, rups=0, a=0, b=0, c=0, d=0, e=0;
+    for (int i = 1; i <= 5; i++)
+    {
+       arr[i]=(rand()%5);
+       switch (arr[i])
+       {
+       case 0:
+    {
+        if(a==0){
+        a=1;
+        printf("Q) What is the capital of France?\n\n");
+        printf("1. Berlin\n");
+        printf("2. Madrid\n");
+        printf("3. Paris\n");
+        printf("4. Rome\n");
+        printf("Enter Your Answer : ");
+        scanf("%d",&ans);
+        if(ans==3)
+            {
+                printf("Correct Answer\n");
+                rups = 100;
+                printf("You have earned rupees %d\n", rups);
+            } else
+            {
+                printf("Wrong Answer\n");
+                printf("You have not earned\n");
+            }
+        }
+        else
+        continue;
+    }
+       case 1:
+       {
+        if(b==0){
+        b=1;
+        printf("Q) Which country is known as the 'Land of the rising sun?\n\n");
+        printf("1. India\n");
+        printf("2. Japan\n");
+        printf("3. Nepal\n");
+        printf("4. China\n");
+        printf("Enter Your Answer : ");
+        scanf("%d",&ans);
+        if(ans==2){
+            printf("Correct Answer\n");
+            rups += 100;
+            printf("You have earned rupees %d\n", rups);
+        }
+         else{
+            printf("Wrong Answer\n");
+            printf("You have not earned\n");
+        }
+        }
+        else
+        continue;
+       }
+       case 2:
+       {
+        if(c==0){
+        c=1;
+        printf("Q) From which language did the word 'Ketchup' come from?\n\n");
+        printf("1. French\n");
+        printf("2. Spanish\n");
+        printf("3. Chinese\n");
+        printf("4. Japanese\n");
+        printf("Enter Your Answer : ");
+        scanf("%d",&ans);
+        if(ans==4){
+            printf("Correct Answer\n");
+            rups += 100;
+            printf("You have earned rupees %d\n", rups);
+        }
+         else{
+            printf("Wrong Answer\n");
+            printf("You have not earned\n");
+        }
+        }
+        else 
+        continue;
+       }
+       case 3:
+    { 
+        if(d==0){
+        d=1;
+        printf("Q) What is the capital city of Canada?\n\n");
+        printf("1. Toronto\n");
+        printf("2. Ottawa\n");
+        printf("3. Vancouver\n");
+        printf("4. Florida\n");
+        printf("Enter Your Answer : ");
+        scanf("%d",&ans);
+        if(ans==2){
+            printf("Correct Answer\n");
+            rups += 100;
+            printf("You have earned rupees %d\n", rups);
+        }
+        else{
+            printf("Wrong Answer\n");
+            printf("You have not earned\n");
+        }
+        }
+        else
+        continue;
+    }
+        case 4:
+    {
+        if(e==0){
+        printf("Q) Which Nobel Prize-winning author wrote 'One Hundred Years of Solitude'?\n\n");
+        printf("1. Gabriel García Márquez\n");
+        printf("2. Gabriel Celaya\n");
+        printf("3. Mario Vargas Llosa\n");
+        printf("4. Julio Cortázar\n");
+        printf("Enter Your Answer : ");
+        scanf("%d",&ans);
+        if(ans==1){
+            printf("Correct Answer\n");
+            rups += 100;
+            printf("You have earned rupees %d\n", rups);
+        }
+        else{
+            printf("Wrong Answer\n");
+            printf("You have not earned\n");
+        }
+        }
+        else
+        continue;
+    }
+        break;
+       
+       default:
+        break;
+       }
+    }
+    return 0;
+}
+// #include<stdio.h>
+// float amt(float a);
+// int main()
+// {
+//     float i;
+//     printf("Enter amount without taxes: ");
+//     scanf("%f",&i);
+//     float x=amt(i);
+//     printf("%f",x);
+//     return 0;
+// }
+// float amt(float a)
+// {
+//     float n = a/10;
+//     float b = a + n;
+//     return(b);
+// }
+
+// #include<stdio.h> //Pattern printing using function
+// void star(){
+//     int i, j, r;
+//     printf("Enter number of rows: ");
+//     scanf("%d",&r);
+//     for ( i = 0; i <= r; i++)
+//     {
+//         for( j = 0; j < i; j++)
+//         {
+//             printf("*");
+//         }
+//         printf("\n");
+//     }
+// }
+
